@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_du_tru_kinh_phi_form" model="ir.ui.view">
+            <field name="name">du_tru_kinh_phi</field>
+            <field name="model">du_tru_kinh_phi</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_read_only" style="font-size:25px">Dự trù kinh phí</div>
+                        <group col="4" string="Thông tin chung">
+                            <field name="name"/>
+                            <field name="so_tien"/>
+                            <field name="mo_ta"/>
+                            <field name="cong_viec_ids"/>
+                        </group>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+        <record id="view_du_tru_kinh_phi_tree" model="ir.ui.view">
+            <field name="name">du_tru_kinh_phi</field>
+            <field name="model">du_tru_kinh_phi</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="so_tien"/>
+                    <field name="mo_ta"/>
+                    <field name="cong_viec_ids"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="du_tru_kinh_phi_search">
+            <field name="model">du_tru_kinh_phi</field>
+            <field name="arch" type="xml">
+                <search>
+                   <field name="name"/>
+                    <field name="so_tien"/>
+                    <field name="mo_ta"/>
+                    <field name="cong_viec_ids"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_du_tru_kinh_phi" model="ir.actions.act_window">
+            <field name="name">Dự trù kinh phí</field>
+            <field name="res_model">du_tru_kinh_phi</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref = "du_tru_kinh_phi_search"/>
+        </record>
+    </data>
+</odoo>
+

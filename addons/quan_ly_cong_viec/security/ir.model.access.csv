@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cong_viec,cong_viec.cong_viec,model_cong_viec,base.group_user,1,1,1,1
+access_du_tru_kinh_phi,du_tru_kinh_phi.du_tru_kinh_phi,model_du_tru_kinh_phi,base.group_user,1,1,1,1

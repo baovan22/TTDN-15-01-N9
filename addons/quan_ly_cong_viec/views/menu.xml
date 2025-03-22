@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem
+            id="menu_root"
+            name="Quản lý Công Việc"
+            sequence="0"/>
+
+        <menuitem name="Quản lý Công Việc"
+            id="menu_quan_ly_cong_viec"
+            parent="menu_root"
+            sequence="1"/>
+
+        <menuitem name="Danh Sách Công Việc"
+            id="menu_cong_viec"
+            parent="menu_quan_ly_cong_viec"
+            sequence="2"
+            action="action_cong_viec"/>
+         <menuitem name="Dự trù kinh phí"
+            id="menu_du_tru_kinh_phi"
+            parent="menu_quan_ly_cong_viec"
+            sequence="3"
+            action="action_du_tru_kinh_phi"/>
+          <!-- <menuitem name="Công việc nhỏ"
+            id="menu_cong_viec_nho"
+            parent="menu_quan_ly_cong_viec"
+            sequence="4"
+            action="action_cong_viec_nho"/> -->
+    </data>
+</odoo>
